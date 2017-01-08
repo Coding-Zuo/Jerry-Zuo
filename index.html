@@ -1,42 +1,224 @@
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>表白网页演示-6</title>
-<link rel="stylesheet" href="http://ws234.com/yanshi/biaobai/6/css/normalize.css">
-<link rel="stylesheet" href="http://ws234.com/yanshi/biaobai/6/css/style.css" media="screen" type="text/css">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Zuo&&Jerry</title>
+<link type="text/css" rel="stylesheet" href="renxi/default.css">
+<script type="text/javascript" src="renxi/jquery.min.js"></script>
+<script type="text/javascript" src="renxi/jscex.min.js"></script>
+<script type="text/javascript" src="renxi/jscex-parser.js"></script>
+<script type="text/javascript" src="renxi/jscex-jit.js"></script>
+<script type="text/javascript" src="renxi/jscex-builderbase.min.js"></script>
+<script type="text/javascript" src="renxi/jscex-async.min.js"></script>
+<script type="text/javascript" src="renxi/jscex-async-powerpack.min.js"></script>
+<script type="text/javascript" src="renxi/functions.js" charset="utf-8"></script>
+<script type="text/javascript" src="renxi/love.js" charset="utf-8"></script>
+<style type="text/css">
+<!--
+.STYLE1 {
+	color: #666666
+}
+-->
+</style>
 </head>
-<body class="body--ready">
-<canvas class="canvas" width="707" height="655"></canvas>
-<div class="help" style="display:none;">?</div>
-<div class="ui" style="display:none;">
-<input class="ui-input" type="text">
-<span class="ui-return">↵</span>
+<body>
+<audio autoplay="autopaly">
+  <source src="renxi.mp3" type="audio/mp3">
+</audio>
+<div id="main">
+  <div id="error">本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌(Chrome)或者火狐(Firefox)浏览器，或者其他游览器的最新版本。</div>
+  <div id="wrap">
+    <div id="text">
+      <div id="code"> <font color="#FF0000"> <span class="say">李家瑞，</span><br>
+        <span class="say"> </span><br>
+        <span class="say">我喜欢你。</span><br>
+        <span class="say"> </span><br>
+        <span class="say">最近复习的日子我想了好多，才鼓起勇气。</span><br>
+        <span class="say"> </span><br>
+        <span class="say">我不打算遮遮掩掩，也不打算错过你。</span><br>
+        <span class="say">我虽然在某些方面都很擅长，但是不会谈恋爱，也不擅长表达。</span><br>
+        <span class="say">所以在这里把所有要说的话写下。
+        </span><br>
+        <span class="say">不知道在什么时候开始关注你了，也有很长一段时间了。</span><br>
+        <span class="say">写程序的时候，总能想起你，在这期间我无数次的怀疑自己是不是错觉，</span><br>
+        <span class="say">因为我真的从没有过这种感觉出现在我脑子里。</span><br>
+        <span class="say">但是你可能不了解我，我愿意把事都沉在心里，喜欢安安静静的做事，</span><br>
+        <span class="say">我愿意欺负我喜欢的人，包括我会欺负我的家人也在内，有时候会被人误解。</span><br>
+        <span class="say">你可以拒绝我，当你什么也没看见，因为我忙的时候压力很大可能没时间陪你，因为要当程序员真的很累，但是我会顾忌你的感受。</span><br>
+        <span class="say">我觉得两个人相处应该是轻松的，能够互相包容，一起进步。</span><br>
+        <span class="say">我的态度很认真。</span><br>
+        <span class="say"></span><br>
+        <span class="say"></span><br>
+        <span class="say"><span class="space"></span> -- 左玉晖。</span> </font>
+        <p></p>
+      </div>
+    </div>
+    <div id="clock-box"> <span class="STYLE1"></span><font color="#33CC00">Zuo&&Jerry</font> <span class="STYLE1">开始……</span>
+      <div id="clock"></div>
+    </div>
+    <canvas id="canvas" width="1100" height="680"></canvas>
+  </div>
 </div>
-<div class="overlay">
-<div class="tabs">
-<div class="tabs-labels"><span class="tabs-label tabs-label--active">Commands</span><span class="tabs-label">Info</span><span class="tabs-label">Share</span></div>
-<div class="tabs-panels">
-<ul class="tabs-panel commands tabs-panel--active">
-<li class="commands-item"><span class="commands-item-title">Text</span><span class="commands-item-info" data-demo="Hello :)">Type anything</span><span class="commands-item-action">Demo</span></li>
-<li class="commands-item"><span class="commands-item-title">Countdown</span><span class="commands-item-info" data-demo="#countdown 10">#countdown<span class="commands-item-mode">number</span></span><span class="commands-item-action">Demo</span></li>
-<li class="commands-item"><span class="commands-item-title">Time</span><span class="commands-item-info" data-demo="#time">#time</span><span class="commands-item-action">Demo</span></li>
-<li class="commands-item"><span class="commands-item-title">Rectangle</span><span class="commands-item-info" data-demo="#rectangle 30x15">#rectangle<span class="commands-item-mode">width x height</span></span><span class="commands-item-action">Demo</span></li>
-<li class="commands-item"><span class="commands-item-title">Circle</span><span class="commands-item-info" data-demo="#circle 25">#circle<span class="commands-item-mode">diameter</span></span><span class="commands-item-action">Demo</span></li>
-<li class="commands-item commands-item--gap"><span class="commands-item-title">Animate</span><span class="commands-item-info" data-demo="The time is|#time|#countdown 3|#icon thumbs-up"><span class="commands-item-mode">command1</span>&nbsp;|<span class="commands-item-mode">command2</span></span><span class="commands-item-action">Demo</span></li>
-</ul>
-</div>
-</div>
-</div>
-<script src="//hm.baidu.com/hm.js?f4a9140509a9470a022f0a26664758df"></script><script src="http://ws234.com/yanshi/biaobai/6/js/index.js"></script>
-
-<!--百度统计-->
 <script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?f4a9140509a9470a022f0a26664758df";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-<!--end 百度统计-->
+    </script>
+<script>
+    (function(){
+        var canvas = $('#canvas');
+		
+        if (!canvas[0].getContext) {
+            $("#error").show();
+            return false;        }
+
+        var width = canvas.width();
+        var height = canvas.height();        
+        canvas.attr("width", width);
+        canvas.attr("height", height);
+        var opts = {
+            seed: {
+                x: width / 2 - 20,
+                color: "rgb(190, 26, 37)",
+                scale: 2
+            },
+            branch: [
+                [535, 680, 570, 250, 500, 200, 30, 100, [
+                    [540, 500, 455, 417, 340, 400, 13, 100, [
+                        [450, 435, 434, 430, 394, 395, 2, 40]
+                    ]],
+                    [550, 445, 600, 356, 680, 345, 12, 100, [
+                        [578, 400, 648, 409, 661, 426, 3, 80]
+                    ]],
+                    [539, 281, 537, 248, 534, 217, 3, 40],
+                    [546, 397, 413, 247, 328, 244, 9, 80, [
+                        [427, 286, 383, 253, 371, 205, 2, 40],
+                        [498, 345, 435, 315, 395, 330, 4, 60]
+                    ]],
+                    [546, 357, 608, 252, 678, 221, 6, 100, [
+                        [590, 293, 646, 277, 648, 271, 2, 80]
+                    ]]
+                ]] 
+            ],
+            bloom: {
+                num: 700,
+                width: 1080,
+                height: 650,
+            },
+            footer: {
+                width: 1200,
+                height: 5,
+                speed: 10,
+            }
+        }
+
+        var tree = new Tree(canvas[0], width, height, opts);
+        var seed = tree.seed;
+        var foot = tree.footer;
+        var hold = 1;
+
+        canvas.click(function(e) {
+            var offset = canvas.offset(), x, y;
+            x = e.pageX - offset.left;
+            y = e.pageY - offset.top;
+            if (seed.hover(x, y)) {
+                hold = 0; 
+                canvas.unbind("click");
+                canvas.unbind("mousemove");
+                canvas.removeClass('hand');
+            }
+        }).mousemove(function(e){
+            var offset = canvas.offset(), x, y;
+            x = e.pageX - offset.left;
+            y = e.pageY - offset.top;
+            canvas.toggleClass('hand', seed.hover(x, y));
+        });
+
+        var seedAnimate = eval(Jscex.compile("async", function () {
+            seed.draw();
+            while (hold) {
+                $await(Jscex.Async.sleep(10));
+            }
+            while (seed.canScale()) {
+                seed.scale(0.95);
+                $await(Jscex.Async.sleep(10));
+            }
+            while (seed.canMove()) {
+                seed.move(0, 2);
+                foot.draw();
+                $await(Jscex.Async.sleep(10));
+            }
+        }));
+
+        var growAnimate = eval(Jscex.compile("async", function () {
+            do {
+    	        tree.grow();
+                $await(Jscex.Async.sleep(10));
+            } while (tree.canGrow());
+        }));
+
+        var flowAnimate = eval(Jscex.compile("async", function () {
+            do {
+    	        tree.flower(2);
+                $await(Jscex.Async.sleep(10));
+            } while (tree.canFlower());
+        }));
+
+        var moveAnimate = eval(Jscex.compile("async", function () {
+            tree.snapshot("p1", 240, 0, 610, 680);
+            while (tree.move("p1", 500, 0)) {
+                foot.draw();
+                $await(Jscex.Async.sleep(10));
+            }
+            foot.draw();
+            tree.snapshot("p2", 500, 0, 610, 680);
+
+            // 会有闪烁不得意这样做, (＞﹏＜)
+            canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
+            canvas.css("background", "#ffe");
+            $await(Jscex.Async.sleep(300));
+            canvas.css("background", "none");
+        }));
+
+        var jumpAnimate = eval(Jscex.compile("async", function () {
+            var ctx = tree.ctx;
+            while (true) {
+                tree.ctx.clearRect(0, 0, width, height);
+                tree.jump();
+                foot.draw();
+                $await(Jscex.Async.sleep(25));
+            }
+        }));
+
+        var textAnimate = eval(Jscex.compile("async", function () {
+		    var together = new Date();
+		    together.setFullYear(2017,0, 9); 			//时间年月日
+		    together.setHours(12);						//小时	
+		    together.setMinutes(0);					//分钟
+		    together.setSeconds(0);					//秒前一位
+		    together.setMilliseconds(2);				//秒第二位
+
+		    $("#code").show().typewriter();
+            $("#clock-box").fadeIn(500);
+            while (true) {
+                timeElapse(together);
+                $await(Jscex.Async.sleep(1000));
+            }
+        }));
+
+        var runAsync = eval(Jscex.compile("async", function () {
+            $await(seedAnimate());
+            $await(growAnimate());
+            $await(flowAnimate());
+            $await(moveAnimate());
+
+            textAnimate().start();
+
+            $await(jumpAnimate());
+        }));
+
+        runAsync().start();
+    })();
+    </script>
+
+
+
+
+
 </body></html>
